@@ -1,0 +1,16 @@
+ul.user
+  li.user__title= 'Name: '
+  li= dataItem.name
+  li.user__title= 'Company: '
+  li= dataItem.company
+  li.user__title= 'Phone: ' 
+  li= dataItem.phone 
+  li.user__title= 'Email: '
+  li= dataItem.email
+  li.user__title= 'Country: ' 
+  li= dataItem.country 
+  li.user__title= 'Status: '
+  if(dataItem.status == 'Active')
+    button.button__active= 'Active' 
+  else 
+    button.button= "Inactive"

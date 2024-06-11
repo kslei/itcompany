@@ -1,0 +1,23 @@
+@import '../_base.scss';
+
+.futor {
+  width: calc(100% - 78px);
+  padding: 30px 40px 0 38px;
+  @include flex-row;
+  justify-content: space-between;
+  @media (max-width: 1219.98px) {
+    width: calc(100% - 20px);
+    padding: 30px 10px 0 10px;
+  }
+  @media (max-width: 767.98px) {
+    flex-direction: column-reverse;
+    height: 60px;
+    padding: 10px;
+  }
+  &__text {
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: $gray2;
+  }
+}

@@ -1,0 +1,19 @@
+-
+  var pages = [
+    { page: 1, active: true },
+    { page: 2, active: false },
+    { page: 3, active: false },
+    { page: 4, active: false },
+    { page: "", active: false },
+    { page: 40, active: false },
+  ]
+.pagination
+  button.number= "<"
+
+  each page in pages
+    if(page.page>0)
+      button.number(class={ active: page.active })= page.page
+    else 
+      .page0= "..."
+  button.number= ">"
+  
